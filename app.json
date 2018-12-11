@@ -1,10 +1,9 @@
 {
   "pages":[
-    "pages/discovery/discovery",
     "pages/index/index",
+    "pages/discovery/discovery",
     "pages/answer/answer",
     "pages/question/question"
-    
   ],
   "window":{
     "backgroundTextStyle":"dark",
