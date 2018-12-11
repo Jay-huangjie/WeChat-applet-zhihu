@@ -1,0 +1,140 @@
+/* pages/answer/answer.wxss */
+.question{
+  width: 100%;
+  height: 180rpx;
+  background: #298DE5
+}
+.question_title{
+  font-size: 38rpx;
+   color: white;
+   margin: 40rpx;
+   display: block;
+}
+
+.card{
+  width: 100%;
+  position: relative;
+  background: white;
+}
+.card_bg{
+   width: 100%;
+   height: 75rpx;
+   background:#298DE5;
+   position:absolute;
+}
+.card_board{
+  border: solid 2px #ebebeb;
+  border-radius: 3px;
+  width: 630rpx;
+  height: 150rpx;
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 1px 2px #bebebe;
+  margin: 0 auto;
+  background: white;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  
+}
+.card_board image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 18px;
+ 
+}
+.card-t{
+  margin: 15rpx;
+  width: 60%;
+}
+.card-t1{
+  font-size: 30rpx;  
+}
+.card-t2{
+  color: #bebebe;
+  font-size: 20rpx;  
+}
+.follows{
+    border: 1px solid #bebebe;
+    color: #bebebe;
+    width: 120rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+ text-align: center;
+}
+
+.nofollows{
+    border: 1px solid #298DE5;
+    color: #298DE5;
+    width: 120rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+ text-align: center;
+}
+
+.nofollows text{
+   line-height: 60rpx;
+}
+.follows text{
+   line-height: 60rpx;
+}
+.answer_content{
+  background: white;
+  color: #333333;
+  padding: 30rpx 40rpx;
+}
+
+.answer_content text{
+  font-size: 36rpx;
+}
+.answer_content image{
+  width: 100%;
+  margin: 20rpx 0;
+}
+
+.answer-foot{
+  position: fixed;
+  width: 100%;
+  height: 80rpx;
+  bottom: 0;
+  background: white;
+  border-top: 1px solid #ebebeb;
+  padding: 20rpx 32rpx;
+}
+.foot-zan{
+  border: 2rpx solid #bebebe;
+  border-radius: 8rpx;
+  width: 120rpx;
+  height: 60rpx;
+  margin-left: 32rpx;
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+}
+
+.foot-zan image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.foot-zan text{
+  font-size: 32rpx;
+  color: #bebebe;
+  margin-left: 10rpx;
+}
+.option{
+  flex: 3;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.foot-option{
+   text-align: center;
+   flex: 1;
+}
+
+.foot-option image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.foot-option text{
+  font-size: 24rpx;
+  color: #bebebe;
+  display: block;
+}

@@ -1,0 +1,6 @@
+<!--pages/discovery/discovery.wxml-->
+<view class='container'>
+  <view class='discovery-tab flex-row'>
+    <view wx:for="{{navigaTab}}" data-index='{{index}}' class="weight {{currentInde==index?'active':''}}" bindtap='tabCheck'>{{item}}</view>
+  </view>
+</view>

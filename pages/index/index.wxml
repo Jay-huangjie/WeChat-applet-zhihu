@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class='container'>
+  <view class='serach flex-row y-center'>
+    <view class='search_content flex-row y-center'>
+     <image src='../../images/search.png'></image>
+     <input placeholder='搜索话题, 问题或人' placeholder-class='search_input'></input>
+    </view>
+    <view class='search_right flex-row x-center' bindtap='refreshData'>
+     <image src='../../images/lighting.png'></image>
+    </view>
+  </view>
+  <block wx:for="{{feed}}" wx:key="itemload"> 
+    <view class="content flex-cal {{index==0?'content-margin':''}}">
+       <view class='content-head flex-row y-center indexPadding'>
+          <image src='{{item.feed_source_img}}'></image>
+          <text>{{item.feed_source_name}}{{item.feed_source_txt}}</text>
+          <image class='more' src='../../images/more.png'></image>
+       </view>
+
+       <view class='content-body indexPadding'>
+          <text class='question' bindtap='toQuestion'>{{item.question}}</text>
+          <text class='answer' bindtap='toAnswer'>{{item.answer_ctnt}}</text>
+       </view>
+       <view class='content-bottom flex-row indexPadding' bindtap='toAnswer'>
+          <text>{{item.good_num}}赞同</text>
+          <text>•</text>
+          <text>{{item.comment_num}}评论</text>
+          <text>•</text>
+          <text>关注问题</text>
+       </view>
+    </view>
+  </block>
+</view>
+
