@@ -1,6 +1,41 @@
 <!--pages/discovery/discovery.wxml-->
-<view class='container'>
   <view class='discovery-tab flex-row'>
-    <view wx:for="{{navigaTab}}" data-index='{{index}}' class="weight {{currentInde==index?'active':''}}" bindtap='tabCheck'>{{item}}</view>
+    <view wx:for="{{navigaTab}}" data-index='{{index}}' class="weight {{currentIndex==index?'active':''}}" 
+    bindtap='tabCheck' wx:key="discovery-tab">{{item}}</view>
   </view>
-</view>
+  <scroll-view class="discovery-scroll" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower"
+    upper-threshold="10" lower-threshold="5"
+  >
+     <!-- 推荐 -->
+     <view class='flex-cal' hidden="{{currentIndex==0?'':'true'}}">
+       <swiper indicator-dots="true" duration="1000" class='discovery-swiper' indicator-active-color="#ffffff">
+          <block wx:for="{{imgUrls}}" wx:key="discovery-swiper">
+             <swiper-item  width="355" height="150">
+                  <image src='{{item}}' mode='widthFix'></image>     
+             </swiper-item>
+          </block>
+       </swiper>
+      <block wx:for="{{feed}}" wx:key="discovery-itemload"> 
+        <view class="content flex-cal {{index==0?'content-margin':''}}">
+          <view class='content-head flex-row y-center indexPadding'>
+              <image src='{{item.feed_source_img}}'></image>
+              <text>{{item.feed_source_name}}{{item.feed_source_txt}}</text>
+              <image class='more' src='../../images/more.png'></image>
+          </view>
+
+          <view class='content-body indexPadding'>
+              <text class='question' bindtap='toQuestion'>{{item.question}}</text>
+              <text class='answer' bindtap='toAnswer'>{{item.answer_ctnt}}</text>
+          </view>
+          <view class='content-bottom flex-row indexPadding' bindtap='toAnswer'>
+              <text>{{item.good_num}}赞同</text>
+              <text>•</text>
+              <text>{{item.comment_num}}评论</text>
+              <text>•</text>
+              <text>关注问题</text>
+          </view>
+        </view>
+      </block>
+     </view>
+  </scroll-view>
+

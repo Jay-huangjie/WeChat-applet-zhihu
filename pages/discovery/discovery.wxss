@@ -7,8 +7,22 @@
   font-size: 28rpx;
   line-height: 100rpx;
   text-align: center;
+ z-index: 100;
+ position: fixed;
 }
 .active{
   color: white;
   border-bottom: 2rpx solid white;
 }
+.discovery-swiper{
+  width: 100%;
+  height: 275rpx;
+}
+.discovery-scroll{
+  height: 1500rpx;
+  padding-top: 100rpx;
+}
+.discovery-tab-content{
+  padding: 0
+}
+
