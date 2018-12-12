@@ -10,7 +10,8 @@
     </view>
   </view>
   <block wx:for="{{feed}}" wx:key="itemload"> 
-    <view class="content flex-cal {{index==0?'content-margin':''}}">
+    <!-- 文本 -->
+    <view class="content flex-cal {{index==0?'content-margin':''}}" hidden="{{item.type==0?'':'true'}}">
        <view class='content-head flex-row y-center indexPadding'>
           <image src='{{item.feed_source_img}}'></image>
           <text>{{item.feed_source_name}}{{item.feed_source_txt}}</text>
@@ -20,6 +21,46 @@
        <view class='content-body indexPadding'>
           <text class='question' bindtap='toQuestion'>{{item.question}}</text>
           <text class='answer' bindtap='toAnswer'>{{item.answer_ctnt}}</text>
+       </view>
+       <view class='content-bottom flex-row indexPadding' bindtap='toAnswer'>
+          <text>{{item.good_num}}赞同</text>
+          <text>•</text>
+          <text>{{item.comment_num}}评论</text>
+          <text>•</text>
+          <text>关注问题</text>
+       </view>
+    </view>
+    <!-- 视频 -->
+    <view class="content flex-cal {{index==0?'content-margin':''}}" hidden="{{item.type==1?'':'true'}}">
+       <view class='content-head flex-row y-center indexPadding'>
+          <image src='{{item.feed_source_img}}'></image>
+          <text>{{item.feed_source_name}}{{item.feed_source_txt}}</text>
+          <image class='more' src='../../images/more.png'></image>
+       </view>
+
+       <view class='content-body indexPadding'>
+          <text class='question' bindtap='toQuestion'>{{item.question}}</text>
+          <video src='{{item.answer_ctnt}}' class='media'></video>
+       </view>
+       <view class='content-bottom flex-row indexPadding' bindtap='toAnswer'>
+          <text>{{item.good_num}}赞同</text>
+          <text>•</text>
+          <text>{{item.comment_num}}评论</text>
+          <text>•</text>
+          <text>关注问题</text>
+       </view>
+    </view>
+    <!-- 音频 -->
+    <view class="content flex-cal {{index==0?'content-margin':''}}" hidden="{{item.type==2?'':'true'}}">
+       <view class='content-head flex-row y-center indexPadding'>
+          <image src='{{item.feed_source_img}}'></image>
+          <text>{{item.feed_source_name}}{{item.feed_source_txt}}</text>
+          <image class='more' src='../../images/more.png'></image>
+       </view>
+
+       <view class='content-body indexPadding'>
+          <text class='question' bindtap='toQuestion'>{{item.display}}</text>
+          <audio class='media' src='{{item.src}}' poster='{{item.poster}}' name='{{item.name}}' author='{{item.author}}' controls></audio>
        </view>
        <view class='content-bottom flex-row indexPadding' bindtap='toAnswer'>
           <text>{{item.good_num}}赞同</text>
