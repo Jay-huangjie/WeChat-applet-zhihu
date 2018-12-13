@@ -5,8 +5,6 @@ var app = getApp()
 Page({
  data:{
    feed: [], //数据源
-   array:["关注","收藏","举报"],
-   index:0
  },
  //下拉刷新
   onPullDownRefresh:function(){
@@ -63,17 +61,6 @@ Page({
       });
       wx.hideNavigationBarLoading()
     },3000)
-  },
-  //跳转到问题界面
-  toAnswer:function(){
-    wx.navigateTo({
-      url: '../answer/answer',
-    })
-  },
-  toQuestion:function(){
-    wx.navigateTo({
-      url: '../question/question',
-    })
   }
 })
 
