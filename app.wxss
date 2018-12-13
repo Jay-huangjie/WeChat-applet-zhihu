@@ -88,3 +88,12 @@
     position: absolute;
     right: 16rpx;
 }
+
+.media{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.picker{
+  width: 100%;
+  height: 100rpx;
+}

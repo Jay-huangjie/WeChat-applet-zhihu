@@ -5,7 +5,8 @@ var app = getApp()
 Page({
  data:{
    feed: [], //数据源
-   feed_length: 0 //加载
+   array:["关注","收藏","举报"],
+   index:0
  },
  //下拉刷新
   onPullDownRefresh:function(){
@@ -38,8 +39,7 @@ Page({
   getData:function(){
     var feed = util.getData2();
     this.setData({
-      feed:feed.data,
-      feed_length:feed.data.length
+      feed:feed.data
     })
   },
   onLoadMore(){
