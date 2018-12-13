@@ -44,4 +44,9 @@
   height: 35rpx;
 }
 
+.media{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
 

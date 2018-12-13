@@ -10,6 +10,7 @@ var next = {
     "id": 2,
     "data": [
         {
+            "type": 0,
             "question_id": 9,
             "answer_id": 61,
             "feed_source_id": 25,
@@ -22,6 +23,7 @@ var next = {
             "comment_num": "18"
         },
         {
+            "type": 0,
             "question_id": 10,
             "answer_id": 3,
             "feed_source_id": 23,
@@ -34,6 +36,7 @@ var next = {
             "comment_num": "18"
         },
         {
+          "type": 0,
             "question_id": 11,
             "answer_id": 25,
             "feed_source_id": 24,
@@ -46,6 +49,7 @@ var next = {
             "comment_num": "18"
         },
         {
+          "type": 0,
             "question_id": 12,
             "answer_id": 61,
             "feed_source_id": 25,
@@ -58,6 +62,7 @@ var next = {
             "comment_num": "18"
         },
         {
+          "type": 0,
             "question_id": 13,
             "answer_id": 3,
             "feed_source_id": 23,
@@ -70,6 +75,7 @@ var next = {
             "comment_num": "18"
         },
         {
+          "type": 0,
             "question_id": 14,
             "answer_id": 25,
             "feed_source_id": 24,
@@ -82,6 +88,7 @@ var next = {
             "comment_num": "18"
         },
         {
+          "type": 0,
             "question_id": 15,
             "answer_id": 61,
             "feed_source_id": 25,
@@ -94,6 +101,7 @@ var next = {
             "comment_num": "18"
         },
         {
+          "type": 0,
             "question_id": 16,
             "answer_id": 3,
             "feed_source_id": 23,
