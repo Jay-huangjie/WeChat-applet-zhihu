@@ -1,1 +1,77 @@
 /* pages/question/question.wxss */
+.tag{
+    background: #EEF5F8;
+    color: #2186E0;
+    font-size: 28rpx;
+    padding: 20rpx 20rpx;
+    margin-left: 20rpx;
+    border-radius: 28rpx;
+    height: 52rpx;
+}
+.question-tag{
+   width: 720rpx;
+   
+   margin-top: 30rpx;
+}
+
+.text-margin{
+  margin-left: 20rpx;
+  margin-top: 32rpx;
+  display: block;
+}
+.question-text{
+  font-size: 40rpx;
+}
+.question-tips{
+  color: gray;
+  font-size: 30rpx;
+}
+.eyes{
+  width: 50rpx;
+  height: 50rpx;
+}
+.question-eyes{
+  margin-left: 20rpx;
+  margin-top:50rpx;
+}
+.question-eyes text{
+  margin-left: 14rpx;
+  font-size: 30rpx;
+}
+.question-reply{
+  margin-left: 30rpx;
+  flex: 2;
+}
+.question-follow{
+  background: #52C980;
+  color: white;
+  width: 140rpx;
+  height: 70rpx;
+  font-size: 30rpx;
+  text-align: center;
+  border-radius: 16rpx;
+   margin-top:50rpx;
+   margin-right: 20rpx;
+}
+.opear{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 32rpx;
+}
+.question-follow text{
+  line-height: 70rpx;
+}
+.question-opear{
+  text-align: center;
+  border: 1px solid #ebebeb;
+  padding: 20rpx;
+}
+.question-opear image{
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+.question-opear text{
+  vertical-align: middle;
+  margin-left: 16rpx;
+}

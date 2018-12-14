@@ -1,4 +1,15 @@
 <!--pages/chat.wxml-->
 <view class='container'>
- 
+   <block wx:for="{{chatlist}}" wx:key="chatlist">
+      <view class='flex-row chat-content y-center' data-index='{{index}}' bindtap='chatlistClick'>
+         <image src='{{item.chat_img}}' class='image-round'></image>
+         <view class='flex-cal weight'>
+            <view class='chat-value flex-row y-center'>
+              <text class='chat-name'>{{item.chat_name}}</text>
+              <text class='chat-time'>{{item.chat_time}}</text>
+            </view>
+              <text class='chat-reply'>{{item.reply}}</text>
+         </view>
+      </view>
+   </block>
 </view>

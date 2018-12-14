@@ -1,4 +1,6 @@
 {
-  "component": true,
-  "usingComponents": {}
+  "navigationBarTitleText": "问题",
+  "usingComponents": {
+    "item-list": "/component/indexitem"
+  }
 }

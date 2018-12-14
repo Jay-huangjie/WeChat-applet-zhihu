@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-     feed:[]
+     chatlist:[]
   },
 
   /**
@@ -14,37 +14,12 @@ Page({
    */
   onLoad: function (options) {
     console.info("onLoad")
-    var feed = util.getData2();
+    var chatlist = util.getChatList();
     this.setData({
-      feed: feed.data
+      chatlist: chatlist.data
     })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    console.info("onReady")
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    console.info("onShow")
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    console.info("onHide")
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    console.info("onUnload")
+  chatlistClick:function(e){
+    console.info("点击了第",e.currentTarget.dataset.index,"个")
   }
 })

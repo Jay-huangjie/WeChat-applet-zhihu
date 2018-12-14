@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/question/question",
     "pages/discovery/discovery",
     "pages/answer/answer",
-    "pages/question/question",
     "pages/chatlist/chatlist"
   ],
   "window": {

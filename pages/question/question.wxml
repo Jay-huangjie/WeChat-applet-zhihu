@@ -1,2 +1,37 @@
 <!--pages/question/question.wxml-->
-<text>pages/question/question.wxml</text>
+<view class='container'>
+  <view class='contentPadding flex-cal'>
+    <view class='question-tag'>       
+     <block wx:for="{{tags}}" wx:key="tags">  
+         <text class="tag">{{item}}</text>
+     </block>
+      </view>
+     
+     <text class='question-text text-margin'>选择 Kindle 而不是纸质书的原因是什么？</text>
+     <text class='question-tips text-margin'>国内某不知名Android程序猿</text>
+     <view class='flex-row'>
+        <view class='flex-row question-eyes y-center'>
+          <image src="../../images/eye.png" class='eyes'></image>
+          <text>3316</text>
+        </view>
+        <view class='flex-row question-reply question-eyes y-center'>
+          <image src="../../images/comment2.png" class='eyes'></image>
+          <text>3316</text>
+        </view>
+        <view class='question-follow'>
+          <text>关注</text>
+        </view>
+     </view>
+  </view>
+  <view class='flex-row opear y-center'>
+        <view class='question-opear weight'>
+            <image src="../../images/invite.png"></image>
+            <text>邀请回答</text>
+        </view>
+        <view class='question-opear weight'>
+            <image src="../../images/write.png"></image>
+            <text>写回答</text>
+        </view>
+  </view>
+  <item-list setData="{{feed}}"></item-list>
+</view>

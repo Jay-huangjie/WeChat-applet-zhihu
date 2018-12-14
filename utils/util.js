@@ -24,6 +24,7 @@ var index = require('../data/data_index.js')
 var index_next = require('../data/data_index_next.js')
 var discovery = require('../data/data_discovery.js')
 var discovery_next = require('../data/data_discovery_next.js')
+var chatlist = require("../data/data_chatlist.js")
 
 function getData(url){
   return new Promise(function(resolve, reject){
@@ -61,6 +62,10 @@ function discoveryNext(){
   return discovery_next.next;
 }
 
+function getChatList(){
+  return chatlist.index
+}
+
 
 
 module.exports.getData = getData;
@@ -68,6 +73,7 @@ module.exports.getData2 = getData2;
 module.exports.getNext = getNext;
 module.exports.getDiscovery = getDiscovery;
 module.exports.discoveryNext = discoveryNext;
+module.exports.getChatList = getChatList;
 
 
 
