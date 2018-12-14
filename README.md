@@ -2,7 +2,7 @@
 仿知乎微信小程序demo
 
 此demo是用于学习小程序仿制出来的demo,样式及数据源都参考自此项目
-[zhihu](https://github.com/RebeccaHanjw/weapp-wechat-zhihu),如果你也在学习小程序正愁找不到项目模仿，此项目是一个不错的选择,此项目包含的技术点有：
+[zhihu](https://github.com/RebeccaHanjw/weapp-wechat-zhihu),重写了她的列表实现以及新加入了几个功能实现，如果你也在学习小程序正愁找不到项目模仿，此项目是一个不错的选择,此项目包含的技术点有：
 
 * list列表展示：包含多视图，上啦刷新，下拉加载，刷新使用了两种不同的实现方式：
   `PullDownRefresh`方式与`scroll-view`的方式
